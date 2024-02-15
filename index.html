@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personal Image Viewer</title>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="navbar">
+  <a href="#" onclick="showAlbum('johnart')">JOHN ART</a>
+  <a href="#" onclick="showAlbum('jerome')">JEROME</a>
+  <a href="#" onclick="showAlbum('jannah')">JANNAH</a>
+</div>
+
+<div class="running-text">
+    <p>PACATANG SIBLINGS</p>
+</div>
+
+<div class="album-container">
+    <div id="johnart" class="album-image">
+      <span class="close" onclick="hideAlbum('johnart')">&times;</span>
+      <img src="IMG_20230902_233220.jpg" alt="John Art">
+    </div>
+  
+    <div id="jerome" class="album-image">
+      <span class="close" onclick="hideAlbum('jerome')">&times;</span>
+      <img src="426963774_1334466873966258_5955385665927662835_n.jpg" alt="Jerome">
+    </div>
+  
+    <div id="jannah" class="album-image">
+      <span class="close" onclick="hideAlbum('jannah')">&times;</span>
+      <img src="423903909_1093598011685846_3662965935257521393_n.jpg" alt="Jannah">
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+
+</body>
+</html>
